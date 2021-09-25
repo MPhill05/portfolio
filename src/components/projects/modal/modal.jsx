@@ -2,12 +2,18 @@ import React, { useRef, useEffect, useCallback } from 'react';
 import { useSpring, animated } from 'react-spring';
 import styled from 'styled-components';
 import { MdClose } from 'react-icons/md';
+import {
+  blkGold,
+  phillstack,
+  bmbxCtrl,
+  shopJW
+} from '../projectData.js';
 
 export const Background = styled.div`
   width: 100%;
-  height: 100%;
+  height: 100vh;
   background: rgba(0, 0, 0, 0.8);
-  position: fixed;
+  position: absolute;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -98,10 +104,10 @@ export const Modal = ({ showModal, setShowModal }) => {
         <Background ref={modalRef} onClick={closeModal}>
         <animated.div style={animation}>
           <ModalWrapper showModal={showModal}>
-            <ModalImg src={require('../projects/projectData.js')}
+            <ModalImg src={`${this.projectData.img}`}
             alt={require('../projects/projectData.js')} />
             <ModalContent>
-              <h1>Are you ready?</h1>
+              <h1>{`${this.projectData.projectName}`}</h1>
               <p>Get exclusive access to our next launch</p>
               <button>Join Now</button>
             </ModalContent>

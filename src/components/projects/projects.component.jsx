@@ -27,6 +27,7 @@ const ProjectsSection = ({
   return (
     <>
       <ProjectsContainer>
+        <Modal showModal={showModal} setShowModal={setShowModal} />
         <ProjectsWrapper>
           <InfoRow>
             <TextWrapper>
@@ -35,7 +36,6 @@ const ProjectsSection = ({
             </TextWrapper>
             <ImgWrap>
               <Img onClick={openModal} src={img} alt={alt} size={size} />
-              <Modal showModal={showModal} setShowModal={setShowModal} />
             </ImgWrap>
           </InfoRow>
         </ProjectsWrapper>

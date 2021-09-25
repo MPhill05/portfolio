@@ -9,13 +9,15 @@ import {
   MobileIcon,
   NavMenu,
   NavItem,
-  NavLinks
+  NavLinks,
+  NavBtn,
+  NavButtonLink
 } from './navbar.styles';
 
 
 import './navbar.styles';
 
-const Navbar = () => {
+const Navbar = ({ toggle }) => {
   const [click, setClick] = useState(false);
   const [scrollNav, setScrollNav] = useState(false);
 
@@ -69,6 +71,11 @@ const Navbar = () => {
                   offset={-80}
                 >Projects</NavLinks>
               </NavItem>
+              <NavBtn>
+                <NavButtonLink
+                  to='/resume'
+                >Resume</NavButtonLink>
+              </NavBtn>
               <NavItem>
                 <NavLinks
                   to='contact'

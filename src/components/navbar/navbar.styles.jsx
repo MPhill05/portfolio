@@ -3,10 +3,9 @@ import { Link as LinkRouter } from 'react-router-dom';
 import { Link as LinkScroll } from 'react-scroll';
 
 export const Nav = styled.nav`
-  ${'' /* background: ${({scrollNav}) => (scrollNav ? '#000' : 'transparent')}; */}
-  background-color: #000;
+  background: ${({scrollNav}) => (scrollNav ? '#000' : 'transparent')};
   height: 80px;
-  ${'' /* margin-top: -80px; */}
+  margin-top: -80px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -16,6 +15,7 @@ export const Nav = styled.nav`
   z-index: 10;
 
   @media screen and (max-width: 960px) {
+    background: #000;
     transition: 0.8s all ease;
   }
 `;
@@ -106,4 +106,19 @@ export const NavLinks = styled(LinkScroll)`
   &.active {
     border-bottom: 2px solid #fff;
   }
+`;
+
+export const NavBtn = styled.nav`
+  display: flex;
+  align-items: center;
+`;
+
+export const NavButtonLink = styled(LinkRouter)`
+  color: #fff;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  padding: 0 1rem;
+  height: 100%;
+  cursor: pointer;
 `;
