@@ -17,7 +17,7 @@ import {
 
 import './navbar.styles';
 
-const Navbar = ({ toggle }) => {
+const Navbar = () => {
   const [click, setClick] = useState(false);
   const [scrollNav, setScrollNav] = useState(false);
 

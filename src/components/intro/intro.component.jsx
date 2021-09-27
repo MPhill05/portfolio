@@ -8,10 +8,12 @@ import {
   IntroP,
   IntroBtnWrapper,
   ArrowForward,
-  ArrowRight
+  ArrowRight,
+  NavButton
 } from './intro.styles';
 import Video from '../../videos/video.mp4';
 import { Button } from '../button.styles';
+import { FaArrowDown } from 'react-icons/fa';
 
 const IntroSection = () => {
   const [hover, setHover] = useState(false);
@@ -31,23 +33,23 @@ const IntroSection = () => {
           Software Developer
         </IntroP>
         <IntroBtnWrapper>
-          <Button
-            to='about'
-            onMouseEnter={onHover}
-            onMouseLeave={onHover}
-            primary='true'
-            dark='true'
-          >See More {hover ? <ArrowForward /> : <ArrowRight />}
-          </Button>
-          <Button
+          <NavButton
             to='/resume'
             onMouseEnter={onHover}
             onMouseLeave={onHover}
             primary='true'
             dark='true'
           >Resume {hover ? <ArrowForward /> : <ArrowRight />}
-          </Button>
+          </NavButton>
         </IntroBtnWrapper>
+        {/* <Button
+            to='about'
+            onMouseEnter={onHover}
+            onMouseLeave={onHover}
+            primary='true'
+            dark='true'
+          >See More { <FaArrowDown />}
+          </Button> */}
       </IntroContent>
     </IntroContainer>
   )

@@ -7,7 +7,7 @@ import {
   phillstack,
   bmbxCtrl,
   shopJW
-} from '../projectData.js';
+} from '../projectData';
 
 export const Background = styled.div`
   width: 100%;
@@ -105,7 +105,7 @@ export const Modal = ({ showModal, setShowModal }) => {
         <animated.div style={animation}>
           <ModalWrapper showModal={showModal}>
             <ModalImg src={`${this.projectData.img}`}
-            alt={require('../projects/projectData.js')} />
+            alt={'test'} />
             <ModalContent>
               <h1>{`${this.projectData.projectName}`}</h1>
               <p>Get exclusive access to our next launch</p>
