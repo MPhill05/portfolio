@@ -1,22 +1,17 @@
 import React, { useState } from 'react';
 import { Modal } from './modal/modal';
 import {
-  ProjectsContainer,
-  ProjectsWrapper,
-  InfoRow,
-  TextWrapper,
-  ProjectName,
-  Subtitle,
-  ImgWrap,
+  ProjectSection,
+  ProjectsHeading,
+  ProjectMenu,
+  MenuItem,
   Img
 } from './projects.styles';
 
 const ProjectsSection = ({
   projectName,
-  description,
   img,
-  alt,
-  size
+  alt
 }) => {
   const [showModal, setShowModal] = useState(false);
 
@@ -25,22 +20,18 @@ const ProjectsSection = ({
   }
 
   return (
-    <>
-      <ProjectsContainer>
-        <Modal showModal={showModal} setShowModal={setShowModal} />
-        <ProjectsWrapper>
-          <InfoRow>
-            <TextWrapper>
-              <ProjectName>{projectName}</ProjectName>
-              <Subtitle>{description}</Subtitle>
-            </TextWrapper>
-            <ImgWrap>
-              <Img onClick={openModal} src={img} alt={alt} size={size} />
-            </ImgWrap>
-          </InfoRow>
-        </ProjectsWrapper>
-      </ProjectsContainer>
-    </>
+    <ProjectSection>
+      <Modal showModal={showModal} setShowModal={setShowModal} />
+      <ProjectsHeading>My Projects</ProjectsHeading>
+      <ProjectMenu>
+        <MenuItem>
+          <Img className='background-image' onClick={openModal} src={img} alt={alt} />
+          <div className='content'>
+            <h1 className='title'>{projectName}</h1>
+          </div>
+        </MenuItem>
+      </ProjectMenu>
+    </ProjectSection>
   )
 }
 

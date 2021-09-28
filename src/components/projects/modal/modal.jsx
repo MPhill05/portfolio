@@ -20,9 +20,9 @@ export const Background = styled.div`
 `;
 
 export const ModalWrapper = styled.div`
-  width: 800px;
-  height: 500px;
-  box-shadow: 0 5px 16px rgba(0, 0, 0, 0.2);
+  width: 80vw;
+  height: 60vh;
+  box-shadow: 0 10px 16px rgba(0, 0, 0, 0.8);
   background: #fff;
   color: #000;
   display: grid;
@@ -70,7 +70,7 @@ export const CloseModalButton = styled(MdClose)`
   z-index: 10;
 `;
 
-export const Modal = ({ showModal, setShowModal }) => {
+export const Modal = ({ showModal, setShowModal, blkGold, bmbxCtrl, phillstack, shopJW }) => {
   const modalRef = useRef()
 
   const animation = useSpring({
@@ -104,10 +104,10 @@ export const Modal = ({ showModal, setShowModal }) => {
         <Background ref={modalRef} onClick={closeModal}>
         <animated.div style={animation}>
           <ModalWrapper showModal={showModal}>
-            <ModalImg src={`${this.projectData.img}`}
+            <ModalImg src={``}
             alt={'test'} />
             <ModalContent>
-              <h1>{`${this.projectData.projectName}`}</h1>
+              <h1>{``}</h1>
               <p>Get exclusive access to our next launch</p>
               <button>Join Now</button>
             </ModalContent>
