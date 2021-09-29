@@ -1,18 +1,15 @@
 import React, { useState } from 'react';
 import { Modal } from './modal/modal';
+import { myProjects } from './projectData';
 import {
   ProjectSection,
+  ProjectsContainer,
   ProjectsHeading,
-  ProjectMenu,
   MenuItem,
   Img
 } from './projects.styles';
 
-const ProjectsSection = ({
-  projectName,
-  img,
-  alt
-}) => {
+const ProjectsSection = () => {
   const [showModal, setShowModal] = useState(false);
 
   const openModal = () => {
@@ -23,14 +20,20 @@ const ProjectsSection = ({
     <ProjectSection>
       <Modal showModal={showModal} setShowModal={setShowModal} />
       <ProjectsHeading>My Projects</ProjectsHeading>
-      <ProjectMenu>
-        <MenuItem>
-          <Img className='background-image' onClick={openModal} src={img} alt={alt} />
-          <div className='content'>
-            <h1 className='title'>{projectName}</h1>
-          </div>
-        </MenuItem>
-      </ProjectMenu>
+      <ProjectsContainer>
+        {myProjects.projects.map(({ projectName, img, alt, projectType }) => (
+          <MenuItem>
+            <Img className='background-image' src={img} alt={alt} />
+            <div className='content' onClick={openModal}>
+              <div className='hoverDetails'>
+                <h1 className='title'>{projectName}</h1>
+                <span className='projectType'>{projectType}</span>
+              </div>
+              <span className='viewMore'>View More</span>
+            </div>
+          </MenuItem>
+        ))}
+      </ProjectsContainer>
     </ProjectSection>
   )
 }

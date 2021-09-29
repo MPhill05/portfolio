@@ -1,14 +1,19 @@
 import styled from "styled-components";
 
 export const ProjectSection = styled.div`
-  display: grid;
-  flex-direction: column;
-  align-items: center;
-  padding: 20px 300px;
+  width: 100%
+`;
+
+export const ProjectsContainer = styled.div`
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 `;
 
 export const ProjectsHeading = styled.h1`
-  padding: 20px 0;
+  padding: 40px 0;
   text-align: center;
   
 `;
@@ -22,24 +27,54 @@ export const ProjectMenu = styled.div`
 
 export const MenuItem = styled.div`
   min-width: 30%;
-  width: 30vw;
+  width: 35vw;
   flex-wrap: wrap;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 0 7.5px 15px;
+  margin: 20px;
   overflow: hidden;
+
+  .content {
+    position: absolute;
+    text-align: center;
+    text-decoration: none;
+    color: transparent;
+    width: 35vw;
+    height: 36vh;
+    display: table;
+  }
+
+  .hoverDetails {
+    top: 20px;
+    left: 0;
+    height: 100%;
+    display: table-cell;
+    vertical-align: middle;
+  }
+
+  .viewMore {
+    position: absolute;
+    margin: 0 auto;
+    display: block;
+    padding: 10px 0;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+  }
   
   &:hover {
     cursor: pointer;
 
-    & .background-image {
-      transform: scale(1.1);
-      transition: transform 2s cubic-bezier(0.25, 0.45, 0.45, 0.95);
+    & .content {
+      color: white;
+      background: rgba(0, 0, 0, 0.7);
     }
 
-    &.content {
-      opacity: 0.9;
+    & .background-image {
+      transform: scale(1.05);
+      transition: transform 2s cubic-bezier(0.25, 0.45, 0.45, 0.95);
     }
   }
 
