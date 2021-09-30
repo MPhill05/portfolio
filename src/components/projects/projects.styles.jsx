@@ -1,11 +1,13 @@
 import styled from "styled-components";
 
 export const ProjectSection = styled.div`
-  width: 100%
+  width: 100%;
+  height: 80vh;
 `;
 
 export const ProjectsContainer = styled.div`
   width: 80%;
+  height: 80%;
   margin: auto;
   display: flex;
   flex-wrap: wrap;
@@ -73,8 +75,8 @@ export const MenuItem = styled.div`
     }
 
     & .background-image {
-      transform: scale(1.05);
-      transition: transform 2s cubic-bezier(0.25, 0.45, 0.45, 0.95);
+      transform: scale(1.1);
+      transition: transform 2s cubic-bezier(0.17, 0.67, 0.83, 0.67);
     }
   }
 

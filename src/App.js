@@ -8,6 +8,8 @@ import DropMenu from './components/dropmenu/dropmenu.component';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 import './App.css';
+import Footer from './components/footer/footer.component';
+import SocialLinks from './components/socials/socials.component';
 
 function App() {
   const [isOpen, setIsOpen] = useState(false);
@@ -19,10 +21,12 @@ function App() {
     <Router>
     <DropMenu isOpen={isOpen} toggle={toggle} />
       <Navbar toggle={toggle} />
+      <SocialLinks />
       <Switch>
         <Route path='/' component={Home} exact />
         <Route path='/resume' component={ResumeComponent} />
       </Switch>
+      <Footer />
     </Router>
   );
 }

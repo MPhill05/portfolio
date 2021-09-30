@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import { Link } from 'react-scroll';
 
 export const AboutContainer = styled.div`
   color: #fff;
@@ -13,7 +12,7 @@ export const AboutContainer = styled.div`
 export const AboutContent = styled.div`
   display: grid;
   z-index: 1;
-  height: 450px;
+  height: 35vh;
   width: 100%;
   max-width: 1100px;
   margin-right: auto;
@@ -36,7 +35,7 @@ export const AboutHeader = styled.h3`
   font-weight: 600;
   letter-spacing: 1.4px;
   text-transform: uppercase;
-  margin-bottom: 20px;
+  margin-bottom: 35px;
 `;
 
 export const Column1 = styled.div`
@@ -46,9 +45,10 @@ export const Column1 = styled.div`
 `;
 
 export const Column2 = styled.div`
-  margin-bottom: 15px;
-  padding: 0 15px;
+  margin: 15px 0;
+  padding: 40px 15px;
   grid-area: col2;
+  height: 100%;
 `;
 
 export const AboutP = styled.p`
@@ -66,24 +66,64 @@ export const AboutBtnWrapper = styled.div`
   justify-content: flex-start;
 `;
 
-export const ButtonOne = styled(Link)`
-  border-radius: 50px;
-  background: ${({ primary }) => (primary ? '#fff' : '#000')};
-  white-space: nowrap;
-  cursor: pointer;
-  margin: 0 20px;
-`;
-
-export const ButtonTwo = ButtonOne;
-
 export const ImgColumn = styled.div`
   display: flex;
   justify-content: flex-end;
 `;
 
 export const TechIcon = styled.div`
-width: 50%;
-margin-left: 100px;
-  ${'' /* max-width: 100px; */}
+  width: 50%;
+  margin-left: 100px;
   height: 100%;
+  padding: 20px;
+  padding-top: 50px;
+
+  .html5,
+  .css3,
+  .sass,
+  .react,
+  .aws,
+  .js,
+  .node,
+  .github,
+  .docker {
+    height: 25px;
+    width: 30px;
+  }
+
+  .html5:hover {
+    color: #e34c26;
+  }
+
+  .css3:hover {
+    color: #264de4;
+  }
+
+  .sass:hover {
+    color: #cc6699; 
+  }
+
+  .react:hover {
+    color: #61DBFB;
+  }
+
+  .aws:hover {
+    color: #ff9900;
+  }
+
+  .js:hover {
+    color: #f0db4f;
+  }
+
+  .node:hover {
+    color: #3c873a;
+  }
+
+  .github:hover {
+    color: #4078c0;
+  }
+
+  .docker:hover {
+    color: #0db7ed;
+  }
 `;

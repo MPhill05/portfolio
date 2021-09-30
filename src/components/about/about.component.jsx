@@ -1,4 +1,6 @@
 import React from 'react';
+
+import { Button } from '../button.styles';
 import {
   FaAws,
   FaCss3Alt,
@@ -7,7 +9,8 @@ import {
   FaHtml5,
   FaNodeJs,
   FaReact,
-  FaSass
+  FaSass,
+  FaJs
 } from 'react-icons/fa'
 import {
   AboutContainer,
@@ -18,8 +21,6 @@ import {
   Column2,
   AboutP,
   AboutBtnWrapper,
-  ButtonOne,
-  ButtonTwo,
   ImgColumn,
   TechIcon
 } from './about.styles';
@@ -34,10 +35,10 @@ const AboutSection = () => {
               About Me
             </AboutHeader>
             <AboutP>
-              Hi! I'm Mark Phillips a self-taught Full-Stack Web Developer proficient in JavaScript, and various frameworks and libraries. Experience working as a freelance developer and working directly with customers to create web applications with over 10,000 active users and consistently deliver quality work.
+              Hi! I'm Mark Phillips, a self-taught Full-Stack Web Developer proficient in JavaScript, various frameworks and libraries. I have experience working as a freelance developer, working directly with customers to create web applications with over 10,000 active users and consistently delivering quality work.
             </AboutP>
             <AboutBtnWrapper>
-              <ButtonOne
+              <Button
                 to='contact'
                 smooth={true}
                 duration={500}
@@ -45,47 +46,41 @@ const AboutSection = () => {
                 exact='true'
                 offset={-80}
               >Contact Me
-              </ButtonOne>
-              <ButtonTwo
-                to='/resume'
-                smooth={true}
-                duration={500}
-                spy={true}
-                exact='true'
-                offset={-80}
-              >Resume
-              </ButtonTwo>
+              </Button>
             </AboutBtnWrapper>
           </Column1>
           <Column2>
             <ImgColumn>
               <TechIcon>
-                <FaHtml5 />
+                <FaHtml5 className='html5'/>
               </TechIcon>
               <TechIcon>
-                <FaCss3Alt />
+                <FaCss3Alt className='css3' />
               </TechIcon>
               <TechIcon>
-                <FaSass />
-              </TechIcon>
-            </ImgColumn>
-            <ImgColumn>
-              <TechIcon>
-                <FaReact />
-              </TechIcon>
-              <TechIcon>
-                <FaAws />
-              </TechIcon>
-              <TechIcon>
-                <FaNodeJs />
+                <FaJs className='js' />
               </TechIcon>
             </ImgColumn>
             <ImgColumn>
               <TechIcon>
-                <FaGithub />
+                <FaSass className='sass' />
               </TechIcon>
               <TechIcon>
-                <FaDocker />
+                <FaReact className='react' />
+              </TechIcon>
+              <TechIcon>
+                <FaAws className='aws' />
+              </TechIcon>
+            </ImgColumn>
+            <ImgColumn>
+              <TechIcon>
+                <FaNodeJs className='node' />
+              </TechIcon>
+              <TechIcon>
+                <FaGithub className='github' />
+              </TechIcon>
+              <TechIcon>
+                <FaDocker className='docker' />
               </TechIcon>
             </ImgColumn>
           </Column2>

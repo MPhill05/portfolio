@@ -15,7 +15,7 @@ export const StyledFormWrapper = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 60vh;
+  height: 40vh;
   padding: 0 20px;
 `;
 

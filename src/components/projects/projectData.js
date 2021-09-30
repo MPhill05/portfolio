@@ -1,7 +1,7 @@
-import blkGoldArt from '../../images/blkGold.png';
-import phillstackArt from '../../images/phillstack.png';
-import bmbxctrlArt from '../../images/bmbxCtrl.png';
-import shopjwArt from '../../images/shopJW.png';
+import blkGoldArt from '../../images/blkgoldLogo.png';
+import phillstackArt from '../../images/psLogoBlack.png';
+import bmbxctrlArt from '../../images/bmbxCtrlLogo.png';
+import shopjwArt from '../../images/shopJWLogo.png';
 
 export const myProjects = {
   projects: [{

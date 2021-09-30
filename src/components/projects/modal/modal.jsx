@@ -8,9 +8,11 @@ export const Background = styled.div`
   height: 100vh;
   background: rgba(0, 0, 0, 0.8);
   position: absolute;
+  z-index: 10;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: auto;
 `;
 
 export const ModalWrapper = styled.div`
@@ -61,7 +63,7 @@ export const CloseModalButton = styled(MdClose)`
   width: 32px;
   height: 32px;
   padding: 0;
-  z-index: 10;
+  z-index: 11;
 `;
 
 export const Modal = ({ showModal, setShowModal }) => {
@@ -78,12 +80,14 @@ export const Modal = ({ showModal, setShowModal }) => {
   const closeModal = e => {
     if (modalRef.current === e.target) {
       setShowModal(false)
+      document.body.style.overflow = 'unset';
     }
   }
 
   const keyPress = useCallback(e => {
     if (e.key === 'Escape' && showModal) {
       setShowModal(false)
+      document.body.style.overflow = 'unset';
     }
   }, [setShowModal, showModal])
 

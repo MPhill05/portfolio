@@ -14,6 +14,7 @@ const ProjectsSection = () => {
 
   const openModal = () => {
     setShowModal(prev => !prev)
+    document.body.style.overflow = 'hidden';
   }
 
   return (
@@ -29,7 +30,7 @@ const ProjectsSection = () => {
                 <h1 className='title'>{projectName}</h1>
                 <span className='projectType'>{projectType}</span>
               </div>
-              <span className='viewMore'>View More</span>
+              <span className='viewMore'>View Project</span>
             </div>
           </MenuItem>
         ))}
