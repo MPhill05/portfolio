@@ -24,7 +24,7 @@ export const AboutContent = styled.div`
 
 export const AboutInfoRow = styled.div`
   display: grid;
-  grid-auto-columns: minmax(auto, 1fr);
+  grid-auto-columns: minmax(1fr, 1fr);
   align-items: center;
   grid-template-areas: 'col1 col2';
 `;
@@ -41,15 +41,13 @@ export const AboutHeader = styled.h3`
 
 export const Column1 = styled.div`
   margin-bottom: 15px;
-  padding: 0 15px;
   grid-area: col1;
 `;
 
 export const Column2 = styled.div`
   margin: 15px 0;
-  padding: 80px 15px;
+  padding: 80px 5px;
   grid-area: col2;
-  height: 100%;
 `;
 
 export const SomeTech = styled.p`

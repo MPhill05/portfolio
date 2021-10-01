@@ -52,7 +52,7 @@ const AboutSection = () => {
             </AboutBtnWrapper>
           </Column1>
           <Column2>
-            <SomeTech>Some Tech I've used</SomeTech>
+            <SomeTech>Tech I Use</SomeTech>
             <ImgColumn>
               <TechIcon>
                 <FaHtml5 className='html5' />
