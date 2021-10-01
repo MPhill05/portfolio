@@ -2,6 +2,7 @@ import styled, { css } from "styled-components";
 
 export const ContactContainer = styled.div`
   background: #001;
+  height: 560px;
 `;
 
 export const sharedStyles = css`
@@ -15,8 +16,7 @@ export const StyledFormWrapper = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 40vh;
-  padding: 0 20px;
+  padding-top: 100px;
 `;
 
 export const StyledForm = styled.form`

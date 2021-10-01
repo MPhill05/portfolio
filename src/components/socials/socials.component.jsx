@@ -1,7 +1,11 @@
 import React from 'react'
 import {
   SocialIcons,
-  SocialIconLink
+  SocialIconLink,
+  LinkedInBox,
+  GithubBox,
+  TwitterBox,
+  ResumeBox
 } from './socials.styles';
 import {
   FaLinkedin,
@@ -13,31 +17,39 @@ import {
 const SocialLinks = () => {
   return (
     <SocialIcons>
-      <SocialIconLink
-        className='liLogo'
-        href='https://linkedin.com/in/mphill05'
-        target='_blank'
-        aria-label='Linkedin'>
-        <FaLinkedin className='linkedin' />
-      </SocialIconLink>
-      <SocialIconLink
-        href='https://github.com/mphill05'
-        target='_blank'
-        aria-label='Github'>
-        <FaGithub className='github' />
-      </SocialIconLink>
-      <SocialIconLink
-        href='https://twitter.com'
-        target='_blank'
-        aria-label='Twitter'>
-        <FaTwitter className='twitter' />
-      </SocialIconLink>
-      <SocialIconLink
-        to='/resume'
-        target='_blank'
-        aria-label='Resume'>
-        <FaAddressCard className='resume' />
-      </SocialIconLink>
+      <LinkedInBox>
+        <SocialIconLink
+          className='liLogo'
+          href='https://linkedin.com/in/mphill05'
+          target='_blank'
+          aria-label='Linkedin'>
+          <FaLinkedin className='linkedin' />
+        </SocialIconLink>
+      </LinkedInBox>
+      <GithubBox>
+        <SocialIconLink
+          href='https://github.com/mphill05'
+          target='_blank'
+          aria-label='Github'>
+          <FaGithub className='github' />
+        </SocialIconLink>
+      </GithubBox>
+      <TwitterBox>
+        <SocialIconLink
+          href='https://twitter.com'
+          target='_blank'
+          aria-label='Twitter'>
+          <FaTwitter className='twitter' />
+        </SocialIconLink>
+      </TwitterBox>
+      <ResumeBox>
+        <SocialIconLink
+          to='/resume'
+          target='_blank'
+          aria-label='Resume'>
+          <FaAddressCard className='resume' />
+        </SocialIconLink>
+      </ResumeBox>
     </SocialIcons>
   )
 }

@@ -3,6 +3,7 @@ import styled from "styled-components";
 export const AboutContainer = styled.div`
   color: #fff;
   background: #001;
+  height: 500px;
 
   @media screen and (max-width: 768px) {
     padding: 100px 0;
@@ -12,7 +13,7 @@ export const AboutContainer = styled.div`
 export const AboutContent = styled.div`
   display: grid;
   z-index: 1;
-  height: 35vh;
+  height: 45vh;
   width: 100%;
   max-width: 1100px;
   margin-right: auto;
@@ -46,9 +47,21 @@ export const Column1 = styled.div`
 
 export const Column2 = styled.div`
   margin: 15px 0;
-  padding: 40px 15px;
+  padding: 80px 15px;
   grid-area: col2;
   height: 100%;
+`;
+
+export const SomeTech = styled.p`
+  color: #fff;
+  font-size: 24px;
+  line-height: 5px;
+  font-weight: 600;
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
+  margin-bottom: 35px;
+  text-align: center;
+  padding-left: 90px;
 `;
 
 export const AboutP = styled.p`
@@ -77,11 +90,13 @@ export const TechIcon = styled.div`
   height: 100%;
   padding: 20px;
   padding-top: 50px;
+  text-align: center;
 
   .html5,
   .css3,
   .sass,
   .react,
+  .bootstrap,
   .aws,
   .js,
   .node,
@@ -113,6 +128,10 @@ export const TechIcon = styled.div`
 
   .js:hover {
     color: #f0db4f;
+  }
+
+  .bootstrap:hover {
+    color: #563d7c;
   }
 
   .node:hover {

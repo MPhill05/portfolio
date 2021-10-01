@@ -10,7 +10,8 @@ import {
   FaNodeJs,
   FaReact,
   FaSass,
-  FaJs
+  FaJs,
+  FaBootstrap
 } from 'react-icons/fa'
 import {
   AboutContainer,
@@ -20,6 +21,7 @@ import {
   Column1,
   Column2,
   AboutP,
+  SomeTech,
   AboutBtnWrapper,
   ImgColumn,
   TechIcon
@@ -50,9 +52,10 @@ const AboutSection = () => {
             </AboutBtnWrapper>
           </Column1>
           <Column2>
+            <SomeTech>Some Tech I've used</SomeTech>
             <ImgColumn>
               <TechIcon>
-                <FaHtml5 className='html5'/>
+                <FaHtml5 className='html5' />
               </TechIcon>
               <TechIcon>
                 <FaCss3Alt className='css3' />
@@ -63,18 +66,21 @@ const AboutSection = () => {
             </ImgColumn>
             <ImgColumn>
               <TechIcon>
+                <FaBootstrap className='bootstrap'/>
+              </TechIcon>
+              <TechIcon>
                 <FaSass className='sass' />
               </TechIcon>
               <TechIcon>
                 <FaReact className='react' />
               </TechIcon>
-              <TechIcon>
-                <FaAws className='aws' />
-              </TechIcon>
             </ImgColumn>
             <ImgColumn>
               <TechIcon>
                 <FaNodeJs className='node' />
+              </TechIcon>
+              <TechIcon>
+                <FaAws className='aws' />
               </TechIcon>
               <TechIcon>
                 <FaGithub className='github' />
