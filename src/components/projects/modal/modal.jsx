@@ -2,6 +2,10 @@ import React, { useRef, useEffect, useCallback } from 'react';
 import { useSpring, animated } from 'react-spring';
 import styled from 'styled-components';
 import { MdClose } from 'react-icons/md';
+import {
+  FaRegEye,
+  FaCode
+} from 'react-icons/fa';
 
 export const Background = styled.div`
   width: 100%;
@@ -66,6 +70,24 @@ export const CloseModalButton = styled(MdClose)`
   z-index: 11;
 `;
 
+export const ModalButtons = styled.a`
+  margin: auto;
+
+  .modalBtn {
+    display: inline-block;
+    margin: auto;
+    cursor: pointer;
+  }
+
+  .rightBtn {
+    margin-left: 50px;
+  }
+`;
+
+export const ModalLink = styled.a`
+
+`;
+
 export const Modal = ({ showModal, setShowModal }) => {
   const modalRef = useRef()
 
@@ -105,9 +127,16 @@ export const Modal = ({ showModal, setShowModal }) => {
               <ModalImg src={``}
                 alt={'test'} />
               <ModalContent>
-                <h1>{``}</h1>
-                <p>Get exclusive access to our next launch</p>
-                <button>Join Now</button>
+                <h1>Demo Header</h1>
+                <p>Demo Text</p>
+                <ModalButtons>
+                  <ModalLink href={``} target='_blank' rel='noreferrer'>
+                    <button className='modalBtn'><FaRegEye /> View Code</button>
+                  </ModalLink>
+                  <ModalLink href={``} target='_blank' rel='noreferrer'>
+                    <button className='modalBtn rightBtn'><FaCode /> View Site</button>
+                  </ModalLink>
+                </ModalButtons>
               </ModalContent>
               <CloseModalButton aria-label='Close modal' onClick={() => setShowModal(prev => !prev)} />
             </ModalWrapper>

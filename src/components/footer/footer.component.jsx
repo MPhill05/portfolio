@@ -10,7 +10,7 @@ const Footer = () => {
     <FooterContainer>
       <FooterWrap>
         <WebsiteRights>
-          <a href='https://phillstack.com'>Phillstack</a> &copy; {new Date().getFullYear()}. All rights reserved.
+          <a href='https://phillstack.com'>Mark Phillips</a> &copy; {new Date().getFullYear()}. All rights reserved.
         </WebsiteRights>
       </FooterWrap>
     </FooterContainer>

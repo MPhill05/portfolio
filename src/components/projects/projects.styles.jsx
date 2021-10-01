@@ -43,14 +43,11 @@ export const MenuItem = styled.div`
     text-decoration: none;
     color: transparent;
     width: 35vw;
-    height: 36vh;
+    height: 25vh;
     display: table;
   }
 
   .hoverDetails {
-    top: 20px;
-    left: 0;
-    height: 100%;
     display: table-cell;
     vertical-align: middle;
   }
