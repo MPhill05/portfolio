@@ -13,7 +13,9 @@ export const myProjects = {
     techStack: '',
     challenge: '',
     solution: '',
-    outcome: ''
+    outcome: '',
+    viewCode: '',
+    viewSite: 'https://https://blkgoldmusic.com/'
   },
   {
     projectName: 'Phillstack',
@@ -24,7 +26,9 @@ export const myProjects = {
     techStack: '',
     challenge: '',
     solution: '',
-    outcome: ''
+    outcome: '',
+    viewCode: '',
+    viewSite: 'https://phillstack.com/'
   },
   {
     projectName: 'Boombox Cartel',
@@ -35,7 +39,9 @@ export const myProjects = {
     techStack: '',
     challenge: '',
     solution: '',
-    outcome: ''
+    outcome: '',
+    viewCode: '',
+    viewSite: 'http://boomboxcartel.com/'
   },
   {
     projectName: 'Shop J&W',
@@ -46,6 +52,8 @@ export const myProjects = {
     techStack: '',
     challenge: '',
     solution: '',
-    outcome: ''
+    outcome: '',
+    viewCode: '',
+    viewSite: 'https://shopjandw.com/'
   }]
 }

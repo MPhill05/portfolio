@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import {
   ContactContainer,
+  ContactHeader,
+  ContactInfo,
   StyledButton,
   StyledError,
   StyledForm,
@@ -21,7 +23,7 @@ const ContactSection = () => {
 
   const handleSubmit = e => {
     e.preventDefault();
-    
+
     for (let key in state) {
       if (state[key] === '') {
         setError(`You must provide your ${key}`)
@@ -39,7 +41,18 @@ const ContactSection = () => {
   }
 
   return (
-    <ContactContainer>
+    <ContactContainer id='contact'>
+      <ContactHeader>Say hello!</ContactHeader>
+      <ContactInfo>
+        <br />
+        Got an idea for a project?
+        <br />
+        <br />
+        Potential opportunity?
+        <br />
+        <br />
+        Lets chat!
+      </ContactInfo>
       <StyledFormWrapper>
         <StyledForm onSubmit={handleSubmit}>
           <h2>Contact Me</h2>

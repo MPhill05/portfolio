@@ -11,8 +11,9 @@ export const SocialIcons = styled.div`
 
 export const LinkedInBox = styled.div`
   width: 50px;
-  background-color: #2867B2;
   height: 50px;
+  background-color: #2867B2;
+  border-radius: 0 10px 0 0;
 
   &:hover {
     background-color: #fff;
@@ -26,8 +27,8 @@ export const LinkedInBox = styled.div`
 
 export const GithubBox = styled.div`
   width: 50px;
-  background-color: #4078c0;
   height: 50px;
+  background-color: #4078c0;
 
   &:hover {
     background-color: #bd2c00;
@@ -41,8 +42,8 @@ export const GithubBox = styled.div`
 
 export const TwitterBox = styled.div`
   width: 50px;
-  background-color: #1DA1F2;
   height: 50px;
+  background-color: #1DA1F2;
 
   &:hover {
     background-color: #fff;
@@ -56,8 +57,9 @@ export const TwitterBox = styled.div`
 
 export const ResumeBox = styled.div`
   width: 50px;
-  background-color: #DB4437;
   height: 50px;
+  background-color: #DB4437;
+  border-radius: 0 0 10px 0;
 
   &:hover {
     background-color: #fff;

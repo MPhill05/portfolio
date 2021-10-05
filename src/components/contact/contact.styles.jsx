@@ -2,7 +2,18 @@ import styled, { css } from "styled-components";
 
 export const ContactContainer = styled.div`
   background: #001;
-  height: 560px;
+  height: 90vh;
+`;
+
+export const ContactHeader = styled.h1`
+  color: #fff;
+  text-align: center;
+  padding-top: 100px;
+`;
+
+export const ContactInfo = styled.p`
+  color: #fff;
+  text-align: center;
 `;
 
 export const sharedStyles = css`

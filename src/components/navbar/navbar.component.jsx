@@ -59,7 +59,9 @@ const Navbar = () => {
                   spy={true}
                   exact='true'
                   offset={-80}
-                >About</NavLinks>
+                >
+                  About
+                </NavLinks>
               </NavItem>
               <NavItem>
                 <NavLinks
@@ -69,13 +71,10 @@ const Navbar = () => {
                   spy={true}
                   exact='true'
                   offset={-80}
-                >Projects</NavLinks>
+                >
+                  Projects
+                </NavLinks>
               </NavItem>
-              <NavBtn>
-                <NavButtonLink
-                  to='/resume'
-                >Resume</NavButtonLink>
-              </NavBtn>
               <NavItem>
                 <NavLinks
                   to='contact'
@@ -84,8 +83,17 @@ const Navbar = () => {
                   spy={true}
                   exact='true'
                   offset={-80}
-                >Contact</NavLinks>
+                >
+                  Contact
+                </NavLinks>
               </NavItem>
+              <NavBtn>
+                <NavButtonLink
+                  to='/resume'
+                >
+                  Resume
+                </NavButtonLink>
+              </NavBtn>
             </NavMenu>
           </NavbarContainer>
         </Nav>

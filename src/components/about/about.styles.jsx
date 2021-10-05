@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const AboutContainer = styled.div`
   color: #fff;
   background: #001;
-  height: 500px;
+  height: 600px;
 
   @media screen and (max-width: 768px) {
     padding: 100px 0;

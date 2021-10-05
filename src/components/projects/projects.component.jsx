@@ -18,7 +18,7 @@ const ProjectsSection = () => {
   }
 
   return (
-    <ProjectSection>
+    <ProjectSection id='projects'>
       <Modal showModal={showModal} setShowModal={setShowModal} />
       <ProjectsHeading>My Projects</ProjectsHeading>
       <ProjectsContainer>

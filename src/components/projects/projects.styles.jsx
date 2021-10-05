@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const ProjectSection = styled.div`
   width: 100%;
-  height: 860px;
+  height: 900px;
 `;
 
 export const ProjectsContainer = styled.div`

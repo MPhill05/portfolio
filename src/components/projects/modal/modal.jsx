@@ -20,9 +20,9 @@ export const Background = styled.div`
 `;
 
 export const ModalWrapper = styled.div`
-  width: 80vw;
-  height: 60vh;
-  box-shadow: 0 10px 16px rgba(0, 0, 0, 0.8);
+  width: 800px;
+  height: 500px;
+  box-shadow: 0 5px 16px rgba(0, 0, 0, 0.2);
   background: #fff;
   color: #000;
   display: grid;
