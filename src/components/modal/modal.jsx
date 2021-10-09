@@ -7,6 +7,10 @@ import {
   FaCode
 } from 'react-icons/fa';
 
+import project from '../projects/projects.component';
+
+export const state = {}
+
 export const Background = styled.div`
   width: 100%;
   height: 100vh;
@@ -21,7 +25,7 @@ export const Background = styled.div`
 
 export const ModalWrapper = styled.div`
   width: 800px;
-  height: 500px;
+  height: 600px;
   box-shadow: 0 5px 16px rgba(0, 0, 0, 0.2);
   background: #fff;
   color: #000;
@@ -30,6 +34,7 @@ export const ModalWrapper = styled.div`
   position: relative;
   z-index: 10;
   border-radius: 10px;
+  margin: auto;
 `;
 
 export const ModalImg = styled.img`
@@ -88,7 +93,8 @@ export const ModalLink = styled.a`
 
 `;
 
-export const Modal = ({ showModal, setShowModal }) => {
+export const Modal = ({ projectData, showModal, setShowModal }) => {
+  console.log({projectData})
   const modalRef = useRef()
 
   const animation = useSpring({
@@ -124,11 +130,12 @@ export const Modal = ({ showModal, setShowModal }) => {
         <Background ref={modalRef} onClick={closeModal}>
           <animated.div style={animation}>
             <ModalWrapper showModal={showModal}>
-              <ModalImg src={``}
-                alt={'test'} />
+              <ModalImg src={project.img}
+                alt={project.alt} />
               <ModalContent>
-                <h1>Demo Header</h1>
-                <p>Demo Text</p>
+                <h1>{projectData}</h1>
+                <p>{project.projectType}</p>
+                <p>{project.techStack}</p>
                 <ModalButtons>
                   <ModalLink href={``} target='_blank' rel='noreferrer'>
                     <button className='modalBtn'><FaRegEye /> View Code</button>

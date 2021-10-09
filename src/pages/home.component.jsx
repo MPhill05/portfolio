@@ -7,12 +7,21 @@ import ProjectsSection from '../components/projects/projects.component';
 import Navbar from '../components/navbar/navbar.component';
 import DropMenu from '../components/dropmenu/dropmenu.component';
 
+import { Modal } from '../components/modal/modal';
+
 import SocialLinks from '../components/socials/socials.component';
 
+export var openModal = () => { }
 
 const Home = () => {
+  const [showModal, setShowModal] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
 
+  openModal = () => {
+    setShowModal(prev => !prev)
+    document.body.style.overflow = 'hidden';
+  }
+  
   const toggle = () => {
     setIsOpen(!isOpen)
   }
@@ -24,6 +33,7 @@ const Home = () => {
       <SocialLinks />
       <IntroSection />
       <AboutSection />
+      <Modal showModal={showModal} setShowModal={setShowModal} />
       <ProjectsSection />
       <ContactSection />
     </>

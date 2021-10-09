@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import { Modal } from './modal/modal';
 import { myProjects } from './projectData';
+import { openModal } from '../../pages/home.component';
 import {
   ProjectSection,
   ProjectsContainer,
@@ -9,31 +9,33 @@ import {
   Img
 } from './projects.styles';
 
-const ProjectsSection = () => {
-  const [showModal, setShowModal] = useState(false);
+// function projectData(data) {
+//   let project = [data];
+//   return project
+// }
 
-  const openModal = () => {
-    setShowModal(prev => !prev)
-    document.body.style.overflow = 'hidden';
-  }
+const ProjectsSection = () => {
+  const [projectData, setProjectData] = useState()
 
   return (
     <ProjectSection id='projects'>
-      <Modal showModal={showModal} setShowModal={setShowModal} />
+
       <ProjectsHeading>My Projects</ProjectsHeading>
       <ProjectsContainer>
-        {myProjects.projects.map(({ projectName, img, alt, projectType }) => (
-          <MenuItem>
-            <Img className='background-image' src={img} alt={alt} />
-            <div className='content' onClick={openModal}>
-              <div className='hoverDetails'>
-                <h1 className='title'>{projectName}</h1>
-                <span className='projectType'>{projectType}</span>
+        {myProjects.projects.map((project) => {
+          return (
+            <MenuItem>
+              <Img className='background-image' src={project.img} alt={project.alt} />
+              <div className='content' onClick={() => openModal(console.log({projectData}), setProjectData(project))}>
+                <div className='hoverDetails'>
+                  <h1 className='title'>{project.projectName}</h1>
+                  <span className='projectType'>{project.projectType}</span>
+                </div>
+                <span className='viewMore'>View Project</span>
               </div>
-              <span className='viewMore'>View Project</span>
-            </div>
-          </MenuItem>
-        ))}
+            </MenuItem>
+          )
+        })}
       </ProjectsContainer>
     </ProjectSection>
   )

@@ -12,8 +12,8 @@ import {
   NavButton
 } from './intro.styles';
 import Video from '../../videos/video.mp4';
-import { Button } from '../button.styles';
-import { FaArrowDown } from 'react-icons/fa';
+// import { Button } from '../button.styles';
+// import { FaArrowDown } from 'react-icons/fa';
 
 const IntroSection = () => {
   const [hover, setHover] = useState(false);

@@ -2,7 +2,7 @@ import styled, { css } from "styled-components";
 
 export const ContactContainer = styled.div`
   background: #001;
-  height: 90vh;
+  height: 88vh;
 `;
 
 export const ContactHeader = styled.h1`
