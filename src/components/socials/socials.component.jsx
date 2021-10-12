@@ -36,7 +36,7 @@ const SocialLinks = () => {
       </GithubBox>
       <TwitterBox>
         <SocialIconLink
-          href='https://twitter.com'
+          href='https://twitter.com/mphill05'
           target='_blank'
           aria-label='Twitter'>
           <FaTwitter className='twitter' />
