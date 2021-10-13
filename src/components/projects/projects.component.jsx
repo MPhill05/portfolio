@@ -39,7 +39,7 @@ const ProjectsSection = () => {
     ];
     setTempdata(id => [1, ...tempData]);
 
-    return setModal(true);
+    return setModal(prev => !prev);
   }
 
   return (
@@ -76,7 +76,7 @@ const ProjectsSection = () => {
             outcome={tempData[8]}
             viewCode={tempData[9]}
             viewSite={tempData[10]}
-            closeModal={() => setModal(false)}
+            closeModal={() => !setModal(false)}
           /> : ''
       }
     </>

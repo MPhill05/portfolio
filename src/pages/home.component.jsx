@@ -8,12 +8,8 @@ import Navbar from '../components/navbar/navbar.component';
 
 import SocialLinks from '../components/socials/socials.component';
 
-export var openModal = () => { }
-
 const Home = () => {
   const [isOpen, setIsOpen] = useState(false);
-
-  
   
   const toggle = () => {
     setIsOpen(!isOpen)

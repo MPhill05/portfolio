@@ -24,8 +24,8 @@ export const ModalWrapper = styled.div`
   top: 500px;
   left: 50%;
   transform: translate(-50%, -50%);
-  height: 70%;
-  width: 70%;
+  height: 40rem !important;
+  width: 75%;
   z-index: 101;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -33,7 +33,7 @@ export const ModalWrapper = styled.div`
   color: #000;
   border-radius: 10px;
   background: #fff;
-  overflow-y: auto;
+  overflow-y: hidden;
   padding: 20px;
   /* width: 800px;
   height: 600px;
@@ -55,7 +55,13 @@ export const ModalContent = styled.div`
   justify-content: center;
   align-items: center;
   line-height: 1.8;
-  color: #141414;
+  color: #141414;  
+`;
+
+export const ProblemSolve = styled.div`
+  width: 100%;
+  height: 20rem;
+  overflow-y: scroll;
 
   p {
     margin-bottom: 1rem;
@@ -105,7 +111,7 @@ export const ImgColumn = styled.div`
 
 export const TechIcon = styled.div`
   width: 100%;
-  height: 100%;
+  height: 40%;
   padding: 20px;
   padding-top: 50px;
   text-align: center;

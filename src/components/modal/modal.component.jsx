@@ -10,6 +10,7 @@ import {
   ModalWrapper,
   ModalImg,
   ModalContent,
+  ProblemSolve,
   ModalButtons,
   ModalLink,
   CloseModalButton,
@@ -19,7 +20,7 @@ import {
 
 const Modal = forwardRef((props, ref) => {
   const [display, setDisplay] = React.useState(true);
-  
+
   const animation = useSpring({
     config: {
       duration: 250
@@ -44,11 +45,12 @@ const Modal = forwardRef((props, ref) => {
   }
 
   if (display) {
+    document.body.style.overflow = 'hidden';
     return reactDom.createPortal(
       <Background onClick={close}>
         <animated.div style={animation}>
           <ModalWrapper>
-            <ModalImg src={props.ModalImg}
+            <ModalImg src={props.img}
               alt={props.alt} />
             <ModalContent>
               <h1>{props.projectName}</h1>
@@ -58,9 +60,11 @@ const Modal = forwardRef((props, ref) => {
                   {props.techStack}
                 </TechIcon>
               </ImgColumn>
-              <p>{props.challenge}</p>
-              <p>{props.solution}</p>
-              <p>{props.outcome}</p>
+              <ProblemSolve>
+                <p>{props.challenge}</p>
+                <p>{props.solution}</p>
+                <p>{props.outcome}</p>
+              </ProblemSolve>
               <ModalButtons>
                 <ModalLink href={props.viewCode} target='_blank' rel='noreferrer'>
                   <button className='modalBtn'><FaRegEye /> View Code</button>
@@ -75,9 +79,10 @@ const Modal = forwardRef((props, ref) => {
         </animated.div>
       </Background>
       , document.getElementById('modal-root'))
+  } else {
+    document.body.style.overflow = 'unset';
+    return null
   }
-
-  return null
 })
 
 export default Modal;
