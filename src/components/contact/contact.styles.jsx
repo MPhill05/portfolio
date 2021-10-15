@@ -38,12 +38,32 @@ export const StyledForm = styled.form`
   border-radius: 10px;
   box-sizing: border-box;
   box-shadow: 0px 0px 20px 0px ragba(0, 0, 0, 0.2);
+
+  input:focus,
+  textarea:focus {
+    outline: none !important;
+    border: 2px solid #0046C5;
+  }
+`;
+
+export const H1 = styled.h1`
+  font-size: 4xl;
+  font-style: bold;
+  display: flex;
+  justify-content: center;
+`;
+
+export const Space = styled.div`
+  padding: 5px;
 `;
 
 export const StyledInput = styled.input`
   background-color: #eee;
   display: block;
   width: 100%;
+  border-radius: 4px;
+  border: none;
+  height: 30px;
 `;
 
 export const StyledTextArea = styled.textarea`
@@ -51,19 +71,23 @@ export const StyledTextArea = styled.textarea`
   width: 100%;
   min-height: 100px;
   resize: none;
+  border-radius: 4px;
+  border: none;
+  height: 30px;
 `;
 
 export const StyledButton = styled.button`
-  display: block;
-  background-color: #f7797d;
-  color: #fff;
-  font-size: .9rem;
-  border: 0;
-  border-radius: 5px;
-  height: 40px;
-  padding: 0 20px;
+  margin: 10px 0;
+  background-color: #0046C5;
+  color: white;
+  padding: 10px;
+  width: 100%;
   cursor: pointer;
-  box-sizing: border-box;
+
+  :hover {
+    background-color: #0F3379;
+    transition: background-color 0.2s ease;
+  }
 `;
 
 export const StyledFieldset = styled.fieldset`
