@@ -43,7 +43,7 @@ export const MenuItem = styled.div`
     text-decoration: none;
     color: transparent;
     width: 35vw;
-    height: 25vh;
+    height: 40vh;
     display: table;
   }
 

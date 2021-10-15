@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const AboutContainer = styled.div`
   color: #fff;
   background: #001;
-  height: 600px;
+  height: 35rem;
 
   @media screen and (max-width: 768px) {
     padding: 100px 0;
@@ -15,7 +15,7 @@ export const AboutContent = styled.div`
   z-index: 1;
   height: 45vh;
   width: 100%;
-  max-width: 1100px;
+  max-width: 80vw;
   margin-right: auto;
   margin-left: auto;
   padding: 0 24px;
@@ -31,8 +31,8 @@ export const AboutInfoRow = styled.div`
 
 export const AboutHeader = styled.h3`
   color: #fff;
-  font-size: 48px;
-  line-height: 5px;
+  font-size: 64px;
+  line-height: 20px;
   font-weight: 600;
   letter-spacing: 1.4px;
   text-transform: uppercase;
@@ -40,12 +40,10 @@ export const AboutHeader = styled.h3`
 `;
 
 export const Column1 = styled.div`
-  margin-bottom: 15px;
   grid-area: col1;
 `;
 
 export const Column2 = styled.div`
-  margin: 15px 0;
   padding: 80px 5px;
   grid-area: col2;
 `;
@@ -65,9 +63,9 @@ export const SomeTech = styled.p`
 export const AboutP = styled.p`
   color: #fff;
   font-size: 12px;
-  line-height: 16px;
-  font-weight: 300;
-  letter-spacing: 1.4px;
+  line-height: 20px;
+  font-weight: 500;
+  letter-spacing: 1.6px;
   padding: 20px 0;
   margin-bottom: 16px;
 `;
@@ -83,10 +81,10 @@ export const ImgColumn = styled.div`
 `;
 
 export const TechIcon = styled.div`
-  width: 50%;
+  width: 25%;
   margin-left: 100px;
   height: 100%;
-  padding: 20px;
+  padding: 10px;
   padding-top: 50px;
   text-align: center;
 

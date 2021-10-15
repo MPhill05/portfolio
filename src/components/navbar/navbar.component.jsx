@@ -87,13 +87,13 @@ const Navbar = () => {
                   Contact
                 </NavLinks>
               </NavItem>
-              <NavBtn>
+              {/* <NavBtn>
                 <NavButtonLink
                   to='/resume'
                 >
                   Resume
                 </NavButtonLink>
-              </NavBtn>
+              </NavBtn> */}
             </NavMenu>
           </NavbarContainer>
         </Nav>
