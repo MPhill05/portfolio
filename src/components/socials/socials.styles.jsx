@@ -9,26 +9,11 @@ export const SocialIcons = styled.div`
   width: 50px;
 `;
 
-export const LinkedInBox = styled.div`
-  width: 50px;
-  height: 50px;
-  background-color: #2867B2;
-  border-radius: 0 10px 0 0;
-
-  &:hover {
-    background-color: #fff;
-    margin-left: 10px;
-
-    .linkedin {
-      color: #2867B2;
-    }
-  }
-`;
-
 export const GithubBox = styled.div`
   width: 50px;
   height: 50px;
   background-color: #4078c0;
+  border-radius: 0 10px 0 0;
 
   &:hover {
     background-color: #bd2c00;
@@ -36,6 +21,21 @@ export const GithubBox = styled.div`
 
     .github {
       color: #fafafa;
+    }
+  }
+`;
+
+export const LinkedInBox = styled.div`
+  width: 50px;
+  height: 50px;
+  background-color: #2867B2;
+
+  &:hover {
+    background-color: #fff;
+    margin-left: 10px;
+
+    .linkedin {
+      color: #2867B2;
     }
   }
 `;
@@ -77,4 +77,5 @@ export const SocialIconLink = styled.a`
   color: #fff;
   font-size: 30px;
   padding: 10px 10px;
+  cursor: pointer;
 `;

@@ -50,6 +50,7 @@ export const MenuItem = styled.div`
   .hoverDetails {
     display: table-cell;
     vertical-align: middle;
+    height: 18rem;
   }
 
   .viewMore {

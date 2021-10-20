@@ -68,7 +68,7 @@ const ProjectsSection = () => {
           <Modal
             projectName={tempData[1]}
             projectType={tempData[2]}
-            modalImg={tempData[3]}
+            modalImg={tempData[4]}
             alt={tempData[4]}
             techStack={tempData[5]}
             challenge={tempData[6]}

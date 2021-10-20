@@ -17,6 +17,14 @@ import {
 const SocialLinks = () => {
   return (
     <SocialIcons>
+      <GithubBox>
+        <SocialIconLink
+          href='https://github.com/mphill05'
+          target='_blank'
+          aria-label='Github'>
+          <FaGithub className='github' />
+        </SocialIconLink>
+      </GithubBox>
       <LinkedInBox>
         <SocialIconLink
           className='liLogo'
@@ -26,14 +34,6 @@ const SocialLinks = () => {
           <FaLinkedin className='linkedin' />
         </SocialIconLink>
       </LinkedInBox>
-      <GithubBox>
-        <SocialIconLink
-          href='https://github.com/mphill05'
-          target='_blank'
-          aria-label='Github'>
-          <FaGithub className='github' />
-        </SocialIconLink>
-      </GithubBox>
       <TwitterBox>
         <SocialIconLink
           href='https://twitter.com/mphill05'
@@ -44,8 +44,9 @@ const SocialLinks = () => {
       </TwitterBox>
       <ResumeBox>
         <SocialIconLink
-          to='/resume'
+          href='../../assets/Mark Phillips.pdf'
           target='_blank'
+          download
           aria-label='Resume'>
           <FaAddressCard className='resume' />
         </SocialIconLink>

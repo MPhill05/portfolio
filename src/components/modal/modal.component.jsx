@@ -50,8 +50,10 @@ const Modal = forwardRef((props, ref) => {
       <Background onClick={close}>
         <animated.div style={animation}>
           <ModalWrapper>
-            <ModalImg src={props.img}
-              alt={props.alt} />
+            <ModalImg
+              src={props.modalImg}
+              alt={props.alt}
+            />
             <ModalContent>
               <h1>{props.projectName}</h1>
               <p>{props.projectType}</p>
@@ -67,10 +69,10 @@ const Modal = forwardRef((props, ref) => {
               </ProblemSolve>
               <ModalButtons>
                 <ModalLink href={props.viewCode} target='_blank' rel='noreferrer'>
-                  <button className='modalBtn'><FaRegEye /> View Code</button>
+                  <button className='modalBtn'><FaRegEye /> CODE</button>
                 </ModalLink>
                 <ModalLink href={props.viewSite} target='_blank' rel='noreferrer'>
-                  <button className='modalBtn rightBtn'><FaCode /> View Site</button>
+                  <button className='modalBtn rightBtn'><FaCode /> SITE</button>
                 </ModalLink>
               </ModalButtons>
             </ModalContent>

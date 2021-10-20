@@ -9,14 +9,6 @@ export const Background = styled.div`
   right: 0;
   z-index: 100;
   background: rgba(0, 0, 0, 0.8);
-  /* width: 100%;
-  height: 100vh;
-  position: absolute;
-  z-index: 10;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: auto; */
 `;
 
 export const ModalWrapper = styled.div`
@@ -25,28 +17,31 @@ export const ModalWrapper = styled.div`
   left: 50%;
   transform: translate(-50%, -50%);
   height: 35rem !important;
-  width: 75%;
   z-index: 101;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1.5fr 1fr;
   box-shadow: 0 5px 16px rgba(0, 0, 0, 0.2);
   color: #000;
   border-radius: 10px;
   background: #fff;
-  overflow-y: hidden;
-  padding: 20px;
-  /* width: 800px;
-  height: 600px;
-  position: relative;
-  z-index: 10;
-  margin: auto; */
+  width: 80%;
+  overflow-y: scroll;
+  
+  ::-webkit-scrollbar {
+  -webkit-appearance: none;
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background-color: rgba(0,0,0,.5);
+}
 `;
 
 export const ModalImg = styled.img`
   width: 100%;
   height: 100%;
-  border-radius: 10px 0 0 10px;
-  /* background: #000; */
+  margin: auto;
 `;
 
 export const ModalContent = styled.div`
@@ -66,6 +61,7 @@ export const ProblemSolve = styled.div`
   p {
     margin-bottom: 1rem;
     margin-right: 30px;
+    margin-left: 30px;
   }
 
   button {
@@ -88,21 +84,32 @@ export const CloseModalButton = styled(MdClose)`
 `;
 
 export const ModalButtons = styled.a`
-  margin: auto;
 
   .modalBtn {
     display: inline-block;
-    margin: auto;
     cursor: pointer;
+    margin: 2rem;
+    font-size: 1.2rem;
+    ${'' /* background-color: #0046C5; */}
+    color: #000;
+    text-transform: capitalize;
+    border-radius: 5px;
+    padding: 0 10px;
+
+    :hover {
+      color: #fff;
+      background-color: #0F3379;
+      transition: background-color 0.2s ease;
+    }
   }
 
   .rightBtn {
-    margin-left: 50px;
+    margin-left: 30px;
   }
 `;
 
 export const ModalLink = styled.a`
-
+  width: 80%;
 `;
 
 export const ImgColumn = styled.div`
@@ -114,6 +121,5 @@ export const TechIcon = styled.div`
   width: 100%;
   height: 40%;
   padding: 20px;
-  padding-top: 50px;
   text-align: center;
 `;
