@@ -13,17 +13,18 @@ export const Background = styled.div`
 
 export const ModalWrapper = styled.div`
   position: relative;
-  top: 25rem;
+  top: 35rem;
   left: 50%;
   transform: translate(-50%, -50%);
-  height: 35rem !important;
+  max-height: 50rem !important;
+  height: 40rem;
   z-index: 101;
   display: grid;
   grid-template-columns: 1.5fr 1fr;
   box-shadow: 0 5px 16px rgba(0, 0, 0, 0.2);
-  color: #000;
+  color: #fff;
   border-radius: 10px;
-  background: #fff;
+  background: #000;
   width: 80%;
   overflow-y: scroll;
   
@@ -50,12 +51,12 @@ export const ModalContent = styled.div`
   justify-content: center;
   align-items: center;
   line-height: 1.8;
-  color: #141414;  
+  color: #fff;  
 `;
 
 export const ProblemSolve = styled.div`
   width: 100%;
-  height: 15rem;
+  height: 20rem;
   overflow-y: scroll;
 
   p {
@@ -70,6 +71,28 @@ export const ProblemSolve = styled.div`
     color: #fff;
     border: none;
   }
+
+  /* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 5px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
 `;
 
 export const CloseModalButton = styled(MdClose)`
@@ -90,15 +113,14 @@ export const ModalButtons = styled.a`
     cursor: pointer;
     margin: 2rem;
     font-size: 1.2rem;
-    ${'' /* background-color: #0046C5; */}
     color: #000;
     text-transform: capitalize;
-    border-radius: 5px;
     padding: 0 10px;
 
     :hover {
       color: #fff;
-      background-color: #0F3379;
+      background-color: grey;
+      border: none;
       transition: background-color 0.2s ease;
     }
   }

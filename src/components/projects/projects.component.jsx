@@ -55,8 +55,8 @@ const ProjectsSection = () => {
                   <div className='hoverDetails'>
                     <h1 className='title'>{project.projectName}</h1>
                     <span className='projectType'>{project.projectType}</span>
+                    <span className='viewMore'>View Project</span>
                   </div>
-                  <span className='viewMore'>View Project</span>
                 </div>
               </MenuItem>
             )

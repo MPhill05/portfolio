@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const ProjectSection = styled.div`
   width: 100%;
-  height: 900px;
+  height: 55rem;
 `;
 
 export const ProjectsContainer = styled.div`
@@ -43,14 +43,14 @@ export const MenuItem = styled.div`
     text-decoration: none;
     color: transparent;
     width: 35vw;
-    height: 40vh;
+    height: 35vh;
     display: table;
   }
 
   .hoverDetails {
     display: table-cell;
     vertical-align: middle;
-    height: 18rem;
+    max-height: 18rem;
   }
 
   .viewMore {
@@ -70,6 +70,7 @@ export const MenuItem = styled.div`
     & .content {
       color: white;
       background: rgba(0, 0, 0, 0.7);
+      max-height: 20rem;
     }
 
     & .background-image {
