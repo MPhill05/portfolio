@@ -1,25 +1,29 @@
 {
   "files": {
     "main.css": "/portfolio-app/static/css/main.ca15cfd5.chunk.css",
-    "main.js": "/portfolio-app/static/js/main.9c3e4160.chunk.js",
-    "main.js.map": "/portfolio-app/static/js/main.9c3e4160.chunk.js.map",
+    "main.js": "/portfolio-app/static/js/main.2e63f740.chunk.js",
+    "main.js.map": "/portfolio-app/static/js/main.2e63f740.chunk.js.map",
     "runtime-main.js": "/portfolio-app/static/js/runtime-main.70c0d8cd.js",
     "runtime-main.js.map": "/portfolio-app/static/js/runtime-main.70c0d8cd.js.map",
-    "static/js/2.45d32f23.chunk.js": "/portfolio-app/static/js/2.45d32f23.chunk.js",
-    "static/js/2.45d32f23.chunk.js.map": "/portfolio-app/static/js/2.45d32f23.chunk.js.map",
+    "static/js/2.e21ec3e0.chunk.js": "/portfolio-app/static/js/2.e21ec3e0.chunk.js",
+    "static/js/2.e21ec3e0.chunk.js.map": "/portfolio-app/static/js/2.e21ec3e0.chunk.js.map",
     "index.html": "/portfolio-app/index.html",
     "static/css/main.ca15cfd5.chunk.css.map": "/portfolio-app/static/css/main.ca15cfd5.chunk.css.map",
-    "static/js/2.45d32f23.chunk.js.LICENSE.txt": "/portfolio-app/static/js/2.45d32f23.chunk.js.LICENSE.txt",
+    "static/js/2.e21ec3e0.chunk.js.LICENSE.txt": "/portfolio-app/static/js/2.e21ec3e0.chunk.js.LICENSE.txt",
+    "static/media/blkGoldSiteImg.71c9e5df.png": "/portfolio-app/static/media/blkGoldSiteImg.71c9e5df.png",
     "static/media/blkgoldLogo.c8226cdf.png": "/portfolio-app/static/media/blkgoldLogo.c8226cdf.png",
     "static/media/bmbxCtrlLogo.b2367b93.png": "/portfolio-app/static/media/bmbxCtrlLogo.b2367b93.png",
-    "static/media/psLogoBlack.6810dd9e.png": "/portfolio-app/static/media/psLogoBlack.6810dd9e.png",
+    "static/media/bmbxCtrlSiteImg.4e94e676.png": "/portfolio-app/static/media/bmbxCtrlSiteImg.4e94e676.png",
+    "static/media/portfolioVideo.c9c1bb51.mp4": "/portfolio-app/static/media/portfolioVideo.c9c1bb51.mp4",
+    "static/media/psLogoBlack.5681c75e.png": "/portfolio-app/static/media/psLogoBlack.5681c75e.png",
+    "static/media/psSiteImg.8d62d81c.png": "/portfolio-app/static/media/psSiteImg.8d62d81c.png",
     "static/media/shopJWLogo.93279fa7.png": "/portfolio-app/static/media/shopJWLogo.93279fa7.png",
-    "static/media/video.a2703484.mp4": "/portfolio-app/static/media/video.a2703484.mp4"
+    "static/media/shopJWSiteImg.f902750a.png": "/portfolio-app/static/media/shopJWSiteImg.f902750a.png"
   },
   "entrypoints": [
     "static/js/runtime-main.70c0d8cd.js",
-    "static/js/2.45d32f23.chunk.js",
+    "static/js/2.e21ec3e0.chunk.js",
     "static/css/main.ca15cfd5.chunk.css",
-    "static/js/main.9c3e4160.chunk.js"
+    "static/js/main.2e63f740.chunk.js"
   ]
 }
