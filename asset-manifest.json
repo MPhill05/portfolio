@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/portfolio-app/static/css/main.ca15cfd5.chunk.css",
-    "main.js": "/portfolio-app/static/js/main.f83d3efd.chunk.js",
-    "main.js.map": "/portfolio-app/static/js/main.f83d3efd.chunk.js.map",
+    "main.js": "/portfolio-app/static/js/main.26080236.chunk.js",
+    "main.js.map": "/portfolio-app/static/js/main.26080236.chunk.js.map",
     "runtime-main.js": "/portfolio-app/static/js/runtime-main.70c0d8cd.js",
     "runtime-main.js.map": "/portfolio-app/static/js/runtime-main.70c0d8cd.js.map",
-    "static/js/2.4d422368.chunk.js": "/portfolio-app/static/js/2.4d422368.chunk.js",
-    "static/js/2.4d422368.chunk.js.map": "/portfolio-app/static/js/2.4d422368.chunk.js.map",
+    "static/js/2.e21ec3e0.chunk.js": "/portfolio-app/static/js/2.e21ec3e0.chunk.js",
+    "static/js/2.e21ec3e0.chunk.js.map": "/portfolio-app/static/js/2.e21ec3e0.chunk.js.map",
     "index.html": "/portfolio-app/index.html",
     "static/css/main.ca15cfd5.chunk.css.map": "/portfolio-app/static/css/main.ca15cfd5.chunk.css.map",
-    "static/js/2.4d422368.chunk.js.LICENSE.txt": "/portfolio-app/static/js/2.4d422368.chunk.js.LICENSE.txt",
+    "static/js/2.e21ec3e0.chunk.js.LICENSE.txt": "/portfolio-app/static/js/2.e21ec3e0.chunk.js.LICENSE.txt",
     "static/media/blkGoldSiteImg.71c9e5df.png": "/portfolio-app/static/media/blkGoldSiteImg.71c9e5df.png",
     "static/media/blkgoldLogo.c8226cdf.png": "/portfolio-app/static/media/blkgoldLogo.c8226cdf.png",
     "static/media/bmbxCtrlLogo.b2367b93.png": "/portfolio-app/static/media/bmbxCtrlLogo.b2367b93.png",
@@ -22,8 +22,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.70c0d8cd.js",
-    "static/js/2.4d422368.chunk.js",
+    "static/js/2.e21ec3e0.chunk.js",
     "static/css/main.ca15cfd5.chunk.css",
-    "static/js/main.f83d3efd.chunk.js"
+    "static/js/main.26080236.chunk.js"
   ]
 }
