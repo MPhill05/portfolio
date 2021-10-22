@@ -44,7 +44,7 @@ const SocialLinks = () => {
       </TwitterBox>
       <ResumeBox>
         <SocialIconLink
-          href='../../assets/Mark Phillips.pdf'
+          href='../../assets/MarkPhillipsWeb.pdf'
           target='_blank'
           download
           aria-label='Resume'>
