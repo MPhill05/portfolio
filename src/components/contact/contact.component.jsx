@@ -23,7 +23,7 @@ const inititalState = {
 }
 
 const ContactSection = () => {
-  const recaptchaKey = '6LeB-dEcAAAAAHAhTcXS0tGmTvY9pt1bkdJXkK2P';
+  const recaptchaKey = '6LeyZuscAAAAACNo-yLQQhW4y7lEEbK857LVoXQS';
   const recaptchaRef = useRef();
 
   const [state, setState] = useState(inititalState);
