@@ -6,6 +6,7 @@ import {
   ProjectsContainer,
   ProjectsHeading,
   MenuItem,
+  MobileText,
   Img
 } from './projects.styles';
 
@@ -46,6 +47,7 @@ const ProjectsSection = () => {
     <>
       <ProjectSection id='projects'>
         <ProjectsHeading>My Projects</ProjectsHeading>
+        <MobileText>(Click to see more!)</MobileText>
         <ProjectsContainer>
           {myProjects.projects.map((project, index) => {
             return (

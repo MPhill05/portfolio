@@ -30,6 +30,15 @@ export const ProjectsHeading = styled.h1`
   
 `;
 
+export const MobileText = styled.p`
+  text-align: center;
+  visibility: hidden;
+
+  @media screen and (max-width:768px) {
+    visibility: unset;
+  }
+`;
+
 export const ProjectMenu = styled.div`
   width: 100%;
   display: flex;
