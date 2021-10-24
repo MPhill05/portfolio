@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack://src/App.css"],"names":[],"mappings":"AAAA,EACE,qBAAsB,CACtB,QAAS,CACT,SAAU,CACV,oCACF,CAEA,KACE,UAAW,CACX,iBACF","file":"main.b1236dbf.chunk.css","sourcesContent":["* {\r\n  box-sizing: border-box;\r\n  margin: 0;\r\n  padding: 0;\r\n  font-family: 'Roboto Mono', sans-serif;\r\n}\r\n\r\nbody {\r\n  width: 100%;\r\n  position: absolute;\r\n}"]}
