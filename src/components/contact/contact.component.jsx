@@ -58,15 +58,6 @@ const ContactSection = () => {
     setSubmitting(false);
   }
 
-  // const handleSubmit = e => {
-  //   for (let key in state) {
-  //     if (state[key] === '') {
-  //       setError(`You must provide your ${key}`)
-  //       return
-  //     }
-  //   }
-  // }
-
   const handleInput = e => {
     e.preventDefault();
     const inputName = e.currentTarget.name;

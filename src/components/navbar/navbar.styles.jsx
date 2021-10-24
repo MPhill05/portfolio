@@ -14,7 +14,7 @@ export const Nav = styled.nav`
   top: 0;
   z-index: 10;
 
-  @media screen and (max-width: 960px) {
+  @media screen and (max-width: 768px) {
     background: #000;
     transition: 0.8s all ease;
   }
@@ -63,14 +63,14 @@ export const NavMenu = styled.ul`
   list-style: none;
   text-align: center;
 
-  @media screen and (max-width: 960px) {
+  @media screen and (max-width: 768px) {
     display: flex;
     flex-direction: column;
     width: 100%;
     height: 90vh;
-    position: absolute;
+    position: fixed;
     top: 80px;
-    right: ${({click}) => (click ? 0 : '-100%')};
+    right: ${({click}) => (click ? '0' : '-100%; visibility: hidden; overflow-y: hidden')};
     opacity: 1;
     transition: all 0.5s ease;
     background: #000;

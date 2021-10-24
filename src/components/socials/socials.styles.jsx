@@ -7,6 +7,10 @@ export const SocialIcons = styled.div`
   top: 35%;
   z-index: 10;
   width: 50px;
+
+  @media only screen and (max-width: 768px) {
+    visibility: hidden;
+  }
 `;
 
 export const GithubBox = styled.div`

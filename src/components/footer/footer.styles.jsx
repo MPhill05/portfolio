@@ -9,8 +9,8 @@ export const FooterWrap = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
+  text-align: center;
   align-items: center;
-  max-width: 1100px;
   margin: 0 auto;
   bottom: 0;
 `;

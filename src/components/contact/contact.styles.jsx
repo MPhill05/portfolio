@@ -46,6 +46,10 @@ export const StyledForm = styled.form`
     outline: none !important;
     border: 2px solid #0046C5;
   }
+
+  @media screen and (max-width: 550px) {
+    width: auto;
+  }
 `;
 
 export const H1 = styled.h1`

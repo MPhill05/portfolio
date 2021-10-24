@@ -3,6 +3,16 @@ import styled from "styled-components";
 export const ProjectSection = styled.div`
   width: 100%;
   height: 55rem;
+
+  @media screen and (max-width: 768px) {
+    height: 75rem;
+  }
+
+  @media screen and (min-width: 300px) {
+    @media screen and (max-width: 500px) {
+      height: 68rem
+    }
+  }
 `;
 
 export const ProjectsContainer = styled.div`
@@ -85,6 +95,20 @@ export const MenuItem = styled.div`
 
   &:last-child {
     margin-left: 7.5px;
+  }
+
+  @media screen and (max-width: 768px) {
+    width: auto;
+    margin: auto;
+    padding-bottom: 60px;
+
+    &:first-child {
+      margin-right: auto;
+    }
+
+    &:last-child {
+      margin-left: auto;
+    }
   }
 `;
 

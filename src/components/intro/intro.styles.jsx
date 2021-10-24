@@ -27,6 +27,10 @@ export const IntroContainer = styled.div`
     linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0%, transparent 100%);
     z-index: 2;
   }
+
+  @media only screen and (max-width: 900px) {
+    width: auto;
+  }
 `;
 
 export const IntroBackground = styled.div`

@@ -7,6 +7,13 @@ export const AboutContainer = styled.div`
 
   @media screen and (max-width: 768px) {
     padding: 100px 0;
+    height: 55rem;
+  }
+
+  @media screen and (min-width: 300px) {
+    @media screen and (max-width: 424px) {
+      height: 60rem;
+    }
   }
 `;
 
@@ -27,6 +34,12 @@ export const AboutInfoRow = styled.div`
   grid-auto-columns: minmax(1fr, 1fr);
   align-items: center;
   grid-template-areas: 'col1 col2';
+
+  @media screen and (max-width: 768px) {
+    grid-auto-columns: auto;
+    grid-template-areas: none;
+    grid-auto-flow: row;
+  }
 `;
 
 export const AboutHeader = styled.h3`
@@ -37,15 +50,32 @@ export const AboutHeader = styled.h3`
   letter-spacing: 1.4px;
   text-transform: uppercase;
   margin-bottom: 35px;
+
+  @media screen and (max-width: 768px) {
+    font-size: 48px;
+    text-align: center;
+  }
+
+  @media screen and (min-width: 300px) {
+    font-size: 36px;
+  }
 `;
 
 export const Column1 = styled.div`
   grid-area: col1;
+
+  @media screen and (max-width: 768px) {
+    grid-area: unset;
+  }
 `;
 
 export const Column2 = styled.div`
   padding: 80px 5px;
   grid-area: col2;
+
+  @media screen and (max-width: 768px) {
+    grid-area: unset;
+  }
 `;
 
 export const SomeTech = styled.p`
@@ -58,6 +88,10 @@ export const SomeTech = styled.p`
   margin-bottom: 35px;
   text-align: center;
   padding-left: 90px;
+
+  @media screen and (max-width: 768px) {
+    padding-left: 0;
+  }
 `;
 
 export const AboutP = styled.p`
@@ -73,6 +107,10 @@ export const AboutP = styled.p`
 export const AboutBtnWrapper = styled.div`
   display: flex;
   justify-content: flex-start;
+
+  @media screen and (max-width: 768px) {
+    justify-content: center;
+  }
 `;
 
 export const ImgColumn = styled.div`
@@ -140,5 +178,10 @@ export const TechIcon = styled.div`
 
   .docker:hover {
     color: #0db7ed;
+  }
+
+  @media only screen and (max-width: 900px) {
+    margin-left: 0;
+    margin: auto;
   }
 `;
