@@ -25,7 +25,7 @@ const IntroSection = () => {
   return (
     <IntroContainer>
       <IntroBackground>
-        <VideoBackground autoPlay loop muted src={Video} type='video/mp4' />
+        <VideoBackground autoPlay loop muted playsInline src={Video} type='video/mp4' />
       </IntroBackground>
       <IntroContent>
         <IntroH1>Mark Phillips</IntroH1>
