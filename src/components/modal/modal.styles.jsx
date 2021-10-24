@@ -118,6 +118,10 @@ export const ProblemSolve = styled.div`
 ::-webkit-scrollbar-thumb:hover {
   background: #555;
 }
+
+  @media screen and (max-width: 768px) {
+    height: 10rem;
+  }
 `;
 
 export const CloseModalButton = styled(MdClose)`
