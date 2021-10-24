@@ -37,12 +37,29 @@ export const ModalWrapper = styled.div`
   border-radius: 5px;
   background-color: rgba(0,0,0,.5);
 }
+
+  @media screen and (max-width: 768px) {
+    top: 26rem;
+    width: 90%;
+    height: 90%;
+    grid-template-columns: auto;
+}
+
+/* @media screen and (min-width: 769px) {
+  @media screen and (max-width: 1036px) {
+    top: 28rem;
+  }
+} */
 `;
 
 export const ModalImg = styled.img`
   width: 100%;
   height: 100%;
   margin: auto;
+
+  @media screen and (max-width: 768px) {
+    height: 30vh;
+  }
 `;
 
 export const ModalContent = styled.div`
@@ -51,7 +68,15 @@ export const ModalContent = styled.div`
   justify-content: center;
   align-items: center;
   line-height: 1.8;
-  color: #fff;  
+  color: #fff;
+
+  @media screen and (max-width: 768px) {
+    h1 {
+      font-size: 1.5em;
+    }
+
+    line-height: unset;
+  }
 `;
 
 export const ProblemSolve = styled.div`
@@ -104,6 +129,12 @@ export const CloseModalButton = styled(MdClose)`
   height: 32px;
   padding: 0;
   z-index: 11;
+
+  @media screen and (max-width: 768px) {
+    top: 10px;
+    right: 10px;
+    background: rgba(0, 0, 0, 0.7);
+  }
 `;
 
 export const ModalButtons = styled.a`
@@ -123,15 +154,35 @@ export const ModalButtons = styled.a`
       border: none;
       transition: background-color 0.2s ease;
     }
+
+    @media screen and (max-width: 768px) {
+      font-size: 1rem;
+      margin: 1rem;
+    }
   }
 
   .rightBtn {
     margin-left: 30px;
+
+    @media screen and (max-width: 768px) {
+      margin-left: 0px;
+    }
+
   }
 `;
 
 export const ModalLink = styled.a`
   width: 80%;
+
+  @media screen and (max-width: 768px) {
+      width: 20%;
+    }
+
+    @media screen and (min-width: 300px) {
+      @media screen and (max-width: 400px) {
+        width: 48%;
+      }
+    }
 `;
 
 export const ImgColumn = styled.div`

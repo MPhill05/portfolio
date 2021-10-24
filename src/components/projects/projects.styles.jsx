@@ -10,7 +10,7 @@ export const ProjectSection = styled.div`
 
   @media screen and (min-width: 300px) {
     @media screen and (max-width: 500px) {
-      height: 68rem
+      height: 61rem
     }
   }
 `;
@@ -55,6 +55,17 @@ export const MenuItem = styled.div`
     width: 35vw;
     height: 35vh;
     display: table;
+
+    @media screen and (max-width: 768px) {
+      width: 80%;
+      height: 30vh;
+    }
+
+    @media screen and (min-width: 300px) {
+      @media screen and (max-width: 550px) {
+        height: 22vh;
+      }
+    }
   }
 
   .hoverDetails {
