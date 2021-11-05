@@ -10,4 +10,3 @@ jobs:
       - checkout
       - run: echo "yarn install"
       - run: yarn
-      - run: CI=true yarn run build
