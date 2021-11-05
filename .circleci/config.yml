@@ -11,9 +11,3 @@ jobs:
       - run: echo "yarn install"
       - run: yarn
       - run: CI=true yarn run build
-    test:
-      docker:
-        - image: cimg/node:14.10.1
-        - run: echo 'testing'
-        - run: yarn
-        - run: yarn test
