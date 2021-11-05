@@ -1,6 +1,7 @@
 version: 2.1
 jobs:
   build:
+    working_directory: ~/public
     docker:
       - image: cimg/node:14.10.1
         auth:
@@ -8,5 +9,19 @@ jobs:
           password: $DOCKERHUB_PASSWORD
     steps:
       - checkout
-      - run: echo "yarn install"
-      - run: yarn
+      - run: update-npm
+      - command: yarn install -g npm@latest
+      - restore_cache:
+          key: dependency-cache-{{ checksum "package.json" }}
+      - run: CI=true yarn run build
+    test:
+      docker:
+        - image: cimg/node:14.10.1
+        - run: echo 'testing'
+        - run: yarn
+        - run: yarn test
+workflows:
+  version: 2
+  test:
+    jobs:
+      - build
