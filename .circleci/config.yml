@@ -1,7 +1,6 @@
 version: 2.1
 jobs:
   build:
-    working_directory: ~/public
     docker:
       - image: cimg/node:14.10.1
         auth:
@@ -9,8 +8,8 @@ jobs:
           password: $DOCKERHUB_PASSWORD
     steps:
       - checkout
-      - run: update-npm
-      - command: yarn install -g npm@latest
+      - run: echo "yarn install"
+      - run: yarn
       - run: CI=true yarn run build
     test:
       docker:
