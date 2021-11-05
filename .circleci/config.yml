@@ -20,8 +20,3 @@ jobs:
         - run: echo 'testing'
         - run: yarn
         - run: yarn test
-workflows:
-  version: 2
-  test:
-    jobs:
-      - build
