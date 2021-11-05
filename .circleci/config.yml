@@ -11,8 +11,6 @@ jobs:
       - checkout
       - run: update-npm
       - command: yarn install -g npm@latest
-      - restore_cache:
-          key: dependency-cache-{{ checksum "package.json" }}
       - run: CI=true yarn run build
     test:
       docker:
